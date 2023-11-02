@@ -1,0 +1,145 @@
+<!--HTML CALCULATOR TASK-->
+
+<html>
+<head>
+<title>
+THIS IS THE CALCULATOR TASK codesoft
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=display-width,initial-scale=1.0">
+<style type="text/css">
+
+table{
+  
+  padding-top:8px;
+  height:460px;
+  width:400px;
+  text-align:center;
+  border-radius:20px;
+  border-width:8px;
+  background-color:black;
+  color:white;
+  
+  margin-top:80px;
+  padding-right:10px;
+  border-color:silver;
+  box-shadow:0px 10px 15px black;
+  
+  
+  
+
+}
+
+
+ td{
+  border:none;
+
+}
+button{
+
+  padding:13px;
+  border-radius:5px;
+  font-size:25px;
+  font-weight:300;
+  font-family:impact;
+  width:50px;
+  cursor:pointer;
+  border:none;
+
+}
+button:hover{
+  box-shadow:0px 3px 5px hotpink;
+  
+ 
+
+
+}
+
+
+input{
+
+ font-size:18px;
+ color:hotpink;
+
+ 
+
+}
+</style>
+
+<script>
+
+function ac(){
+   document.getElementById("res").value="";
+
+}
+
+ 
+ function show(input){
+   document.getElementById("res").value+=input;
+
+
+}
+
+function cal(){
+
+    var output=eval(document.getElementById("res").value);
+    document.getElementById("res").value=output;
+
+
+
+}
+
+
+
+</script>
+</head>
+<body bgcolor="hotpink">
+
+<center>
+<table border="1px">
+<tr>
+ <td colspan="3"><input id="res" type="text"style="height:60px;width:270px;padding:10px;border-radius:7px;background-color:white"></td>
+ <td><button onclick="ac()" >AC</button></td>
+</tr>
+
+<tr>
+<td><button onclick="show('7')">7</button></td>
+<td><button onclick="show('8')">8</button></td>
+<td><button onclick="show('9')">9</button></td>
+<td><button onclick="show('+')">+</button></td>
+</tr>
+
+<tr>
+<td><button onclick="show('4')">4</button></td>
+<td><button onclick="show('5')">5</button></td>
+<td><button onclick="show('6')">6</button></td>
+<td><button onclick="show('-')">-</button></td>
+</tr>
+
+<tr>
+<td><button onclick="show('1')">1</button></td>
+<td><button onclick="show('2')">2</button></td>
+<td><button onclick="show('3')">3</button></td>
+<td><button onclick="show('*')">*</button></td>
+</tr>
+
+
+<tr>
+<td><button onclick="show('0')">0</button></td>
+<td><button onclick="show('%')">%</button></td>
+<td><button onclick="show('/')">/</button></td>
+<td><button onclick="cal()">=</button></td>
+</tr>
+
+
+
+
+</table>
+</center>
+
+
+
+
+
+</body>
+</html>
